@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+
+    <body style="margin: 0">
+        <div style = text-align:center;>
+            <h1>Movie Booking</h1>
+            <p>Total Booked: <span id = "bookingCount"></span></p>
+            <label for="findSlot">Find Slot: </label>
+            <input type="text" name="findSlot" id="findSlot" />
+        </div>
+        <form style="margin-top: 70px" onsubmit="handleFormSubmit(event)">
+            <label for="username">User Name: </label>
+            <input type="text" name="username" id="username"/>
+            <label for="seatnumber">Seat Number:</label>
+            <input type="number" id="seatnumber" name="seatnumber" min="1" max="500">
+            <button type="submit">ADD</button>
+        </form>
+        <ul></ul>
+    </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+    <script src="movieBooking.js"></script>
+</html>
